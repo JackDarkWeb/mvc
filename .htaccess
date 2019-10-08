@@ -1,0 +1,7 @@
+RewriteEngine on  #start the rewrite engine
+
+
+
+# means everything in url and will be replaced by $1
+# ^(.*)$ signifie tout ce qui se trouve dans url et va être remplacé par $1
+RewriteRule ^([^/]+)/? index.php?url=$1 [L,QSA]
